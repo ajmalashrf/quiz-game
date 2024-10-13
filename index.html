@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="quiz_styles.css">
+</head>
+<body>
+    <h1>Welcome to the Quiz Game</h1>
+    <div class="quiz-container" id="quiz-section">
+        <div class="question">
+            <p>1. What does CPU stand for?</p>
+            <div class="choices">
+                <label><input type="radio" name="cpu" value="central processing unit"> Central Processing Unit</label>
+                <label><input type="radio" name="cpu" value="control processing unit"> Control Processing Unit</label>
+                <label><input type="radio" name="cpu" value="computer personal unit"> Computer Personal Unit</label>
+                <label><input type="radio" name="cpu" value="central performance unit"> Central Performance Unit</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>2. What does PSU stand for?</p>
+            <div class="choices">
+                <label><input type="radio" name="psu" value="power supply unit"> Power Supply Unit</label>
+                <label><input type="radio" name="psu" value="performance supply unit"> Performance Supply Unit</label>
+                <label><input type="radio" name="psu" value="power storage unit"> Power Storage Unit</label>
+                <label><input type="radio" name="psu" value="peripheral supply unit"> Peripheral Supply Unit</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>3. What does GPU stand for?</p>
+            <div class="choices">
+                <label><input type="radio" name="gpu" value="graphics processing unit"> Graphics Processing Unit</label>
+                <label><input type="radio" name="gpu" value="general processing unit"> General Processing Unit</label>
+                <label><input type="radio" name="gpu" value="global processing unit"> Global Processing Unit</label>
+                <label><input type="radio" name="gpu" value="graphical performance unit"> Graphical Performance Unit</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>4. What does PDU stand for?</p>
+            <div class="choices">
+                <label><input type="radio" name="pdu" value="protocol data unit"> Protocol Data Unit</label>
+                <label><input type="radio" name="pdu" value="power distribution unit"> Power Distribution Unit</label>
+                <label><input type="radio" name="pdu" value="protocol division unit"> Protocol Division Unit</label>
+                <label><input type="radio" name="pdu" value="process data unit"> Process Data Unit</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>5. What does URL stand for?</p>
+            <div class="choices">
+                <label><input type="radio" name="url" value="uniform resource locator"> Uniform Resource Locator</label>
+                <label><input type="radio" name="url" value="universal resource locator"> Universal Resource Locator</label>
+                <label><input type="radio" name="url" value="uniform routing locator"> Uniform Routing Locator</label>
+                <label><input type="radio" name="url" value="universal routing locator"> Universal Routing Locator</label>
+            </div>
+        </div>
+
+        <button onclick="submitQuiz()">Submit</button>
+    </div>
+
+    <div id="result-section" style="display: none;">
+        <h2>Your Results</h2>
+        <p id="score"></p>
+        <p id="percentage"></p>
+        <div class="original-answers">
+            <h3>Correct Answers:</h3>
+            <p>1. CPU: Central Processing Unit</p>
+            <p>2. PSU: Power Supply Unit</p>
+            <p>3. GPU: Graphics Processing Unit</p>
+            <p>4. PDU: Protocol Data Unit</p>
+            <p>5. URL: Uniform Resource Locator</p>
+        </div>
+        <button onclick="restartQuiz()">Play Again</button>
+    </div>
+
+    <script src="quiz_scripts.js"></script>
+</body>
+</html>
