@@ -36,5 +36,5 @@ To run this project locally, follow these steps:
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/your-username/quiz-game.git
+git clone https://github.com/ajmalashrf/quiz-game.git
 cd quiz-game
