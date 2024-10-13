@@ -1,6 +1,3 @@
-# quiz-game
-A simple and interactive quiz game built with HTML, CSS, and JavaScript, where users can answer multiple-choice questions and get their results at the end. The game dynamically displays correct and incorrect answers, along with the score.
-
 # Quiz Game
 
 Welcome to the **Quiz Game**, a simple and fun web-based quiz where users can answer multiple-choice questions and check their score in real-time. This project is built with HTML, CSS, and JavaScript and can be deployed using GitHub Pages, Netlify, or Vercel.
